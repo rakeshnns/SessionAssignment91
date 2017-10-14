@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 9.1</title>
+	<!--CDN for Bootstrap jquery-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+    <script type="text/javascript">
+        //Popover Jquery function.   
+    	$(document).ready(function(){
+           $('[data-toggle="popover"]').popover();   
+        });
+    </script>	
+</head>
+<body>
+   <!-- Bootstrap container--> 
+   <div class="container">
+      <!-- Jumbotron -->
+   	  <div class="jumbotron">
+        <h2>Nehru–Gandhi family</h2>
+   	    <blockquote>
+   	  	The Nehru–Indira Gandhi family is a prominent Indian political dynasty, which primarily consisted of Jawaharlal Nehru, Indira Gandhi and her descendants. Their political involvement has traditionally revolved around the Indian National Congress. Members of the family have traditionally led the Congress party and the Republic of India since independence.
+
+        The Guardian wrote in 2007 "The Nehru Gandhi brand has no peer in the world — a member of the family has been in charge of India for 40 of the 60 years since independence. The allure of India's first family blends the right to rule of British monarchy with the tragic glamour of America's Kennedy clan."[3]
+
+        The Gandhi surname came from Feroze Jehangir Ghandy, who was not related to Mahatma Gandhi. Indira Priyadarshini Nehru (the daughter of Jawaharlal Nehru) married Feroze Gandhi in 1942 and adopted his surname.[4]
+        <footer>From WikiPedia website</footer>
+        </blockquote>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Family Tree</h3>
+        <!--Button with popover title and content which will be shown as topover to button-->
+        <button type="button" class="btn btn-default" data-toggle="popover" title="First Gen" 
+        data-content="Gangadhar Nehru (1827–1861)" data-placement="top" >First Generation</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Second Gen" 
+        data-content="Bansi Dhar Nehru,Nandlal Nehru (1845–1887),Motilal Nehru (1861–1931)" data-placement="top" >Second Generation</button>
+        <button type="button" class="btn btn-success" data-toggle="popover" title="Third Gen" 
+        data-content="Jawaharlal Nehru (1889–1964),Vijaya Lakshmi Pandit (1900–1990),Krishna Hutheesing (1907–1967),
+        Kamala Nehru (1899–1936) " data-placement="top" >Third Generation</button>
+        <button type="button" class="btn btn-info" data-toggle="popover" title="Fourth Gen" 
+        data-content="Indira Gandhi(1917–1984),Feroze Gandhi (1912–1960),Magdolna Nehru (1908-2017),
+        Harsha Hutheesing (1935-1991)" data-placement="top" >Fourth Generation</button>
+        <button type="button" class="btn btn-warning" data-toggle="popover" title="Fifth Gen" 
+        data-content="Arun Nehru(1944-2013),Rajiv Gandhi (1944–1991),Sanjay Gandhi (1946–1980),
+        Sonia Gandhi(1946),Maneka Gandhi (1956) " data-placement="top" >Fifth Generation</button>
+        <button type="button" class="btn btn-danger" data-toggle="popover" title="Sixth Gen" 
+        data-content="Rahul Gandhi (1970),Priyanka Vadra (1972),Varun Gandhi (1980),
+        Yamini Gandhi " data-placement="top" >Sixth Generation</button>
+   	  </div>
+
+   </div>
+
+</body>
+</html>
